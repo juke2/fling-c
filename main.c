@@ -638,6 +638,17 @@ int test_solve_fling(char * data_path, int MAX_FLING, int BUFFER_SIZE){
     return 0;
 }
 
+
+/*
+process dedicated_fling_test:
+
+Handpicked tests with solutions for process solve_fling.
+Test results are printed to console.
+
+return value:
+
+0 - Process successful. 
+*/
 int dedicated_fling_test(){
 int data_index = 0, buff_ind = 0, solution_ind = 0, num_fling = 0, iterator = 0, result = 0, arrays_similar = 0;
 
@@ -718,7 +729,7 @@ for(data_index = 0; data_index < LEN_DATA; data_index++){
         
 }
 return 0;
-}
+} // these tests are kind of dumb but it doesn't really matter to be honest. tests don't really need to be that efficient (at least at this scale).
 
 
 int main(int argc, char **argv)
